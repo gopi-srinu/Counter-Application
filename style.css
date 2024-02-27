@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Expose', sans-serif;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #14213d;
+}
+
+body header {
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
+body header nav {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body header nav h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+body header nav p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+body main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body main section {
+    width: 50%;
+    height: calc(100% - 8rem);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+body main section h2 {
+    font-size: 8rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+body main section article {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+body main section article button {
+    width: 15rem;
+    height: 5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    border: 2px solid black;
+}
+
+body main section article button:nth-child(1) {
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+}
+
+body main section article button:nth-child(2) {
+    background-color: rgb(40, 124, 175);
+    color: white;
+}
+
+body main section article button:nth-child(3) {
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    body header nav {
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    body header nav h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    body header nav p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        /* padding: 1rem;    */
+    }
+
+    body main {
+        width: 100%;
+        height: 100%;
+    }
+
+    body main section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body header nav h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    body header nav p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    body main section {
+        height: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    body main section article {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
